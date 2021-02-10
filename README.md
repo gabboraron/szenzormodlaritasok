@@ -1,0 +1,2 @@
+# szenzormodlaritasok
+szenzorok

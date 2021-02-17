@@ -8,3 +8,9 @@
 - önálló féléves feladat
 
 
+## szenzorok csoportosísása mérendő mennyisé alapján
+- mechanikai érzékelők
+- termikus mennyiségek
+- elektromos és mágneses mennyiségek
+- élettani paraméterek
+

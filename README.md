@@ -228,3 +228,97 @@ multispektrrális képek a mezőgazdaásgról megadja a kukorica stressz szintj�
 - [agrodat projekt](http://agrodat.hu/) (mezőgazdaásgi tudásközpont döntéstámogató rendszer megvalósítása innovatív szenzorrendszerrel)
 - talajszenzorok: nedvesség talaj vízszint, jégképződés, aktív fény intenzitása
 - környezeti szenzorok, érzékeny csapadékmérő, szélsebesség, szélirány
+
+### metadata kezelés
+> - hőmérsékletet mérek a póznán a méréshez kell tudni a mérés idejét, hogy mikor jön be, mikor adja ki az oszlop az adatot, mikor mentette le az adatot, milyen időzónában van a mérőoszlop
+> - smart vineyard
+>
+> **jelenlegi problémák**
+> 
+> - hatótávolság
+> - energiafelhasználás
+> - sok modlaitás
+> - mintavételezési idők problámja ->sok adat
+> - adat aggregáció
+> - védelem munkagépektől/emberektől, állatoktól/környezeti hatásoktól
+> - vizualizációs problémák
+> - adattárolás és adat visszakeresés, rövid és hosszútávú trendek, a környezet befolyása alapján előrejelzések késítése
+> 
+> mivel nagyon sok adat keletkezik, ezért érdemes átlagokat kezelni, hogy ne a nagy adatmennyiséget kelljen kezelni
+
+## [fruition sciences](https://fruitionsciences.com/en/home):
+- növényi nedv áramlás szenzorral megmondható mikor optimális a szüretelés
+- analitika, javaslatok az öntözésről
+- szőlészeti műveletek és mérések rögzítése
+
+## szenzorok adattovábítási megoldásai
+### vezeték mentes
+![spektrumok](https://www.netfizika.hu/sites/default/files/pictures/Feladatok/Szamolos/Elektromagnesseg/Magneses/63/sp.jpg)
+
+#### IEEE 802 csoportok
+- IEEE 802.1 Magas szintű LAN protokollok
+  - 802.1D – Spanning Tree Protocol
+  - 802.1Q – Virtual Local Area Networks (VLAN)
+  - 802.1aq - Shortest Path Bridging (SPB)
+- IEEE 802.2 Logical link control és Media Access Control
+- **IEEE 802.3 Ethernet**
+- IEEE 802.4 Token busz (feloszlatva)
+- IEEE 802.5 Token Ring (vezérjeles gyűrű)
+- IEEE 802.6 Városi hálózatok (feloszlatva)
+- IEEE 802.7 Koaxiális kábelt használó alapsávi LAN-ok(feloszlatva)
+- IEEE 802.8 Fiber Optic TAG (feloszlatva)
+- IEEE 802.9 Integrált LAN szolgáltatások(feloszlatva)
+- IEEE 802.10 Együttműködő LAN-ok biztonsága(feloszlatva)
+- **IEEE 802.11 Wireless LAN (Wi-Fi zárójelentés)**
+- IEEE 802.12 igény prioritások
+- IEEE 802.13 (nem használt)
+- IEEE 802.14 kábel modemek (feloszlatva)
+- IEEE 802.15 Wireless PAN
+- IEEE 802.15.1 (Bluetooth zárójelentés)
+- IEEE 802.16 Alapsávi vezetéknélkü hozzáférés (WiMAX zárójelentés)
+- IEEE 802.16e (Mobil) alapsávi vezeték nélkül hozzáférés
+- IEEE 802.17 rugalmas csomag gyűrű
+- IEEE 802.18 Rádió szabályozási TAG
+- IEEE 802.19 Coexistence TAG
+- IEEE 802.20 Mobil alapsávi vezeték nélküli hozzáférés
+- IEEE 802.21 Média független kezelés
+- IEEE 802.22 Vezeték nélküli regionális hálózatok
+
+a párhuzamos adatküldés nagyban megnövelte a sebességet
+
+![wifisec](https://pbs.twimg.com/media/DF6XjSeXkAAvbUo.jpg)
+
+- csma/ca - az állomás jelentkezik, amire választ kap ahhoz hogy adhasson
+- csma/cd - az eszköz érzékeli az ütközést és vár 
+
+wifi jelenlegi titkosítása 2018 óta WPA3
+
+#### bluetooth
+![bluetoth history](https://miro.medium.com/max/4000/1*_GjhWQieYTUl_2mbTehkJQ.png)
+
+*könnyen hackelhető*
+
+- 3.0 -ban a pan hálózatot kinyitotátk egy hálózati hozzáférésre mert beleillesztették a wifi protokolt
+- 4.0 -ban low energy protokollt adtak bele
+- 4.2 - ben IoT támogatást és IPv6 támogatást és titkosítást kapott
+- 5 -ben 4Xtávolság és 8Xsebességre növelte a low energy megoldásokat
+- most az 5.3-nál járunk, 243 méteres távolságra szól
+  - 1 master 7 eszközt szolgál ki, és több százat alvó állapotban
+
+**basic rate**
+- BR: frekvenciamodulálásst használ, 1 tick 302.5 us
+- LowEnergy: 1Mb/s
+
+![brle](https://www.researchgate.net/profile/Karen-Scarfone/publication/329972964/figure/tbl2/AS:708926916030464@1546032756454/2-Key-Differences-Between-Bluetooth-BR-EDR-and-LE.png)
+
+![howitworks](https://www.researchgate.net/profile/Ee-May-Fong/publication/259246800/figure/fig5/AS:297112509140993@1447848550198/Bluetooth-communication-between-the-transmitter-and-mobile-devices.png)
+
+#### ant/ant+
+
+![ant](https://www.researchgate.net/profile/Nadeem-Mehmood/publication/285510534/figure/fig1/AS:367752901611520@1464690532770/hArmor-System-Modular-Architecture_Q320.jpg)![ant+](https://lh3.googleusercontent.com/proxy/ZoCFi0-uQOMWuHYv3GADWOMEjuUR6smHNo7HJErJR8O0VyOyBACHgx4S3X7aAz_ucoJFRNtxqIEXsn-Kk0MnpwlX22zflmhCkzmtQs90Bu3xfChtIQnC_AYzHwnA)
+
+#### long range uhf
+
+
+
+

@@ -315,10 +315,108 @@ wifi jelenlegi titkosítása 2018 óta WPA3
 
 #### ant/ant+
 
+- fitness eszközökhöz használt.
 ![ant](https://www.researchgate.net/profile/Nadeem-Mehmood/publication/285510534/figure/fig1/AS:367752901611520@1464690532770/hArmor-System-Modular-Architecture_Q320.jpg)![ant+](https://lh3.googleusercontent.com/proxy/ZoCFi0-uQOMWuHYv3GADWOMEjuUR6smHNo7HJErJR8O0VyOyBACHgx4S3X7aAz_ucoJFRNtxqIEXsn-Kk0MnpwlX22zflmhCkzmtQs90Bu3xfChtIQnC_AYzHwnA)
 
+#### zigbee
+okosházakban használt technológia
+- 100m - ig
+- 250kbps
+- ism sávon: nem kell hozzá külön frekvenciengedély hogy használjuk.
+
+## HF: megnézni és leküldeni, hogy a telefon milyen vezetkénélküli kapcsolatokra képes
+
+#### 802.11.ah
+- 1 km
+- 40 mbps
+
+#### nfc
+-10 cm
+424 kbps
+
 #### long range uhf
+- még minidg ism
+- extrém esetben yagi antennákkal akár 160 km-is elérhető.
+- frekvenciasáv: 433 MHz
+- nagy hatótávolságú dronvezérléshez alklamas lehet
 
+#### dash7 
+- félkatonai felhasználása van
+- alacsony a fogyasztása
+- kb 1km a távolság
+- civil: CO2 figyelés
+- jól megy át vizen
 
+#### UWB
+- vezeték nélküli továbbítás
+- szabványosítás és negedélyeztetés alatt áll
+- 400-600Mbit/s és feljebb
+- alacsony fogyasztású
+- rövid ideig ad, viszont nagy órajelen
+- felhasználás: egészségügy, helymeghatározás, behatolás védelem, ütközés elkerülés
 
+![UWB spektrum](https://d6qq37vs6ar1f.cloudfront.net/wp-content/uploads/2017/05/eliko_joonis_05-02-900x525.jpg)
+
+### Antennafajták
+- chip antennák
+- porcelán
+- vezeték (meg van határozva, hogy hány centi lehet a kábel
+- trace antennák: nyák megmarva, amihhez az isp32 chippen van az antenna
+
+**külső antennák:**
+- u.FL: kis konektor, ha kivezetnénk akkor hasznos
+- RPSA: nagyobb
+
+### LPWAN technológiák
+Nagy távolságra küld adatokat, kis energiával. tipikusan csillag topogóliában aaz adótól vedő jelet egy fogadó az interneten adja tovább.
+- LoRa/LoRaWAN
+- SIGFOX
+- NB-IoT
+- LTE-M
+- EC-GSM-IoT
+- RPMA
+- Weightless
+
+### LoRa
+> #### Chirp
+> - up chirp: alacsony frekvenciáról amagasra megyek T idő alatt
+> - down chirp: magasról megyek alacsonyra T idő alatt.
+>
+> - maga frekvencia adja az adatot, ezért nem fontos, a zajterhelés
+> - fontos hogy kontinesenként változik az engedélyezett és használt frekvenciasáv!
+>
+> ![lra network](https://miro.medium.com/max/810/1*mJo0_GbLTqKr6R0oxV2DTg.png)
+>
+> kb 5-6 km a hatótávolság ait egy bázisállomás le tud fedni
+> 
+> lehetséges végberendezés: 1 tébla üzenete 1 bájt, 
+
+- gyenge megbízhatóság, nincs grancia késleltetésre
+- kis adatok gyorsan mennek át
+
+### Sigfox
+- 50 km körüli cellaméret, 
+- 600bit/s - 100bit/s
+- néhány ibtes rendszer
+
+lefedettség: https://www.sigfox.com/en/coverage
+
+![lora vs sigfox cover](https://www.libelium.com/wp-content/uploads/2018/10/lorawan_coverage_map3.png)
+
+### NB IoT
+Frekvenciákat vesz meg az operátor maiket bázisállomásokhoz rendel, és azon képes kommunikálni.
+
+**Az 5G kompatibilis az NB IoT rendszerrel**
+
+## vezetékes kommunikáció:
+- homeplug - 100 m
+- Ghm
+- LonWorks - 1.5 km
+- PCLPRIME - 100 km
+
+soros kommunikációs:
+- RS232 szabvány, DB-9 konnekor
+- `/dev/ttyS*`
+- `COMx`
+- USB-re konvertálható, puferelt komunikációval, ami miatt széteshet a kapcsolat.
 

@@ -420,3 +420,57 @@ soros kommunikációs:
 - `COMx`
 - USB-re konvertálható, puferelt komunikációval, ami miatt széteshet a kapcsolat.
 
+## USB
+![usb history](https://resource01-proxy.ulifestyle.com.hk/res/v3/image/content/2280000/2280606/20190226-USB-32_1_1024.jpg)
+![usb colors](https://www.storagereview.com/wp-content/uploads/2020/04/StorageReview-04-USB-Color-Convention.png) 
+![usb covering](https://i.pinimg.com/originals/a8/a6/f4/a8a6f4a3b8846fffb0628c92dc7a4f5d.jpg)
+![power](https://filestore.community.support.microsoft.com/api/images/d5c21b02-2386-4274-abba-1d4fdfd8e35c?upload=true)
+
+**otg**: olyan megoldás ahol mindkét fél kliens és nem master slave alapú, mint egyébként az usb.
+
+> ### USB hub:
+> - akármennyi eszköz csatlkaozhat rá és egy másk hub is.
+> - min 0.5 watt max 2,5 watt leadásra képes.
+>
+> ![hub piramis](https://www.keil.com/pack/doc/mw/USB/html/tiernetwork.png)
+>
+> - aktív hub:   saját táp kábellel
+> - passzív hub: egyenlően osztja szét az áramot a kliensek között, 500mA
+>
+> Lassú bemeneti jelet is gyorsnak veheti ha a maellé betett eszköz gyorsabban ad jelet. EKkkor viszont a lassúból a jelet ismételni kezdi. Tipikus probléma billentyűzet-egér kapcsán.
+ 
+### USB kapcsolat
+- hosszabítót nem illik használni
+
+
+### eszköz csoportok
+- kompozit:
+  -  több interfész, melyek egfymástól függetlenül vezérelhetőek
+  - minden interfészhez külön driver
+- compound szköz: egyetlen driver, több funkcionalitás, pl egér+billentyűzet
+
+![packet típusok](https://www.usbmadesimple.co.uk/ums_g_setup.gif)
+
+## textil alapú vezetékek *(textile wire, conductive textile)*
+- Olyan textil, olyan fonal ami vezeti az áramot.
+- teljes áramkörök, kapcsolók és ledek is ráköthetőek
+
+![kábel](https://ars.els-cdn.com/content/image/3-s2.0-B9780081022283000116-f11-14-9780081022283.jpg) ![arduino](https://i.pinimg.com/originals/64/cd/85/64cd855ab25ae30c9146ec664eed1c3b.jpg)
+
+- gyártása: valamilyen vezető anyagba tesznek fonalat, vagy fonalat áztatnak vezető anyagba.
+- a hajlítások sajnos csak egy ideig képesek működni így.
+- hátrányai:
+  - szigetelési probléma, ezek szigeteletlen fonalok
+  - nehéz javíthatóság és moshatóság
+- felhasználás:  
+  - hadiipar: vadászgépek takarása
+  - tűzoltók/vegyvédelmisek PPE ruhái
+  - szenzorokkal: hőmérséklet, páratartalom, ekg, stb
+## I2C (inter IC)
+> vezetékes összekapcsolás integrált áramkörök összekapcsolására
+- busz alapú, két vezetékkel szinkron átviteli rendszer
+- 2006-óta nem fizetős, de a cím bejegyzése az.
+- sok modul támogatja, master és sok slave rendszerben.
+  - a master adja az órajelet
+  - master és slave szerep felcserélhető
+  - felhúzó elllenállással

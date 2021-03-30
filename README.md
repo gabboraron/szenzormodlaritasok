@@ -15,17 +15,17 @@
 - élettani paraméterek
 
 biológia jellemzők mérésére:
-- ekg
-- eeg
-- emg
-- ecog
+- ekg  → ElectroCardioGraphy 
+- eeg  → ElektroEncephaloGraphy 
+- emg  → ElectroMyoGraphy 
+- ecog → ElektroCOrticoGraphy
 - testhő
 - gsr
 - súly
 - mozgás
 
 ## nagymennyiségű adatgyűjtés kihívásai
-- hálóza korlátai
+- hálózat korlátai
 - hardver korlátai
 - feldolgozási kapacitás korlátai
 
@@ -35,7 +35,7 @@ biológia jellemzők mérésére:
 - hátrány: egyetlen pillanatnyi érték, mandzsetta, leeresztési sebesség, orvos hallása mind befolyásol
 
 **oszcillometriás módszer**
-- autoata vérnyomásmérők
+- automata vérnyomásmérők
 - artéria pulzálása megjelenika felkarra helyezett mandzsetta nyomában
 - pulzálás maximális: artériás középnyomással
 - hátrány: a szorzók pontatlanok öregedéskor az artériák rugalmatlanok.
@@ -47,10 +47,10 @@ biológia jellemzők mérésére:
 - hajszálerek térfogatváltozását regisztrálja
 - hátrány: bonyolult és nehezen követhető
 
-A vérnyomásmérés pontatlan + 8Hg hakreesztbe teszed a lábad, +5 Hg ha ülve méred. A kettő ösze is adódhat.
+**A vérnyomásmérés pontatlan:** + 8Hgmm ha keresztbe teszed a lábad, +5Hgmm ha ülve méred. A kettő ösze is adódhat.
 
 **vércukorszint mérése:**
-- inzulint a langerhans szigetek termelnek, de ha a hasnyálmirigy tönkremegy akkor ez megszűnik
+- inzulint a langerhans szigetek termelnek, de ha a hasnyálmirigy tönkre megy akkor ez megszűnik
 - ha a sejtek nem tudnak a vérből cukrot felvenni akkor a cukor a vérben marad => megnő a vércukorszint egy idő után ellenállnak a sejtek az inzulinnak.
 - kémiai reakcióknál a vegyi anyagok szavatossága korlátos
 - leolvasás automatizáltsága
@@ -59,7 +59,7 @@ A vérnyomásmérés pontatlan + 8Hg hakreesztbe teszed a lábad, +5 Hg ha ülve
   - abbot 
 
 1. cukorbetegség
-- rendszeres inzulens kell
+- rendszeres inzulinozás kell
 2. cukorbetegség
 - lépcsőzetes kezelés
 - elég a diéta is
@@ -67,12 +67,16 @@ A vérnyomásmérés pontatlan + 8Hg hakreesztbe teszed a lábad, +5 Hg ha ülve
 
 **gyógyszerszedés** a gógyszeripar mérete = hadiipar + női kozmetikumok
 
-- **pademekerek:** mérjük az adatokat a testben átküldjük egy lokális tárolóba ami felküldi a felhőbe
+- **pacemekerek:** mérjük az adatokat a testben átküldjük egy lokális tárolóba ami felküldi a felhőbe
 - **emberi légzés monitorozása**: 
    - külső légzés: állanó légcsere zajlik a tüdő és környezet között: gond lehet a fulladás
-     - kilégzési csúcs áramlás mérő 
+     - **kilégzési csúcs áramlás mérő:** Lényegében azt méri, hogy egy kilégzés alkalmával milyen gyorsan jut ki a levegő a tüdőből, PEF
+     - **Spirométer:** tüdő levegőbefogadó képességének mérésére való eszköz 
+     - **Légzési rátát monitorozó öv:** Nyúlásképes pánt, ami a mellkas térfogatváltozását érzékeli 
+     - **Légzésfigyelő/őr babákhoz:** Babaágy aljára helyezhető mozgás érzékelő matrac
+     - **Légzésszámláló:** Alvás/horkolás monitorozás mikrofonnal
    - belső légzés: sejtek és szövetek légzés: asztma, CO fulladás
-- 
+     - **Pulzoximetria:** folyamatosan érzékeli az oxigén szint változását, fájdalommentes, gyakran megbízhatatlan a perifériás érellenállás miatt egyes betegségeknéál
 
 
 koleszterin mérés:
@@ -82,14 +86,26 @@ koleszterin mérés:
 ## EKG
 > non invazív szívvizsgáló eljárás mely a szív elektromos jelenségeit vizsgálja a szívizom összehúzódásakor keletkező elektromos feszültség mérésével
 - szív elektromos jeleit vizsgálja 
-- az ekg műkédis elve: a szívben lejátszódó elektromos folyamatok a test felszínén is jól érzékelhetőek 
-- három pont egy szabályos háromszögeet ad ki, középpontban a szívvel, ennnek a három pontnak az egymáshoz viszonyítható feszültségéből megmondható az aktuális változások a szvben
+- **az ekg műkédési elve:** a szívben lejátszódó elektromos folyamatok a test felszínén is jól érzékelhetőek 
+- három pont egy szabályos háromszögeet ad ki, középpontban a szívvel, ennnek a három pontnak az egymáshoz viszonyítható feszültségéből megmondható az aktuális változások a szívben
 
 EKG görbe: egy szabályos felvételen az öt csúcsot lehet megkülönböztetni:
-- `P` - szinusz csúcs
-- `Q`
-- `R`
-- `S` 
+- `P` -  ingerület a szinusz csomóban (a pitvaron áthaladó elektromos impulzust, a pitvar összehúzódását jelzi)
+- `Q` -  az ingerület kezdete a kamrákban, ez az apró negatív csúcs gyakran nem is látható, ha nagyon megnövekszik, az infarktust jelezhet
+- `R` -  a legnagyobb csúcs a kamrákon végigterjedő ingerületet mutatja 
+- `S` -  ez a negatív csúcs a kamrán végigfutó ingerület végét jelzi
+
+más elemk a diagrammon: 
+-  `T` - a kamra repolarizációját mutatja 
+-  `U` - a normális görbén nem vagy csak alig látható, kóros állapotokban, például káliumhiány esetén látványos
+-  `PQ intervallum` - pitvar - kamrai átvezetést jelent
+
+**normális szívverés:**
+-  `P`-hullám
+-  `QRS` komplexum
+-  `T` hullám
+
+![ekg jel](https://github.com/gabboraron/szenzormodularitasok/blob/main/2011_0001_524_A_belgyogyaszat_alapjai_1.png)![ekg jelmagyarázat](https://m.blog.hu/ba/babosi/image/ecg1.gif)
 
 **használható:** szív és keringési rendszer, terápia, távoli páciensmonitorozás, ambuláns ekg monitorozás, edzés/sportmonitorozás
 - cardioblue
@@ -99,7 +115,11 @@ EKG görbe: egy szabályos felvételen az öt csúcsot lehet megkülönböztetni
 más: MAP, iWatch, bioharness, quardio
 
 ## pacemakerek
-> mellkasban vagy hasban műtét során elhelyezett  kis eszközök, ami elektromos impulzusok segítségével képes a szív ingerképző
+> mellkasban vagy hasban műtét során elhelyezett  kis eszközök, ami elektromos impulzusok segítségével képes a szív ingerképző és ingerületvezető feladatait átvenni, kontrollálni
+> 
+> Aritmia esetén a szív vagy túl lassan (bradikardia), vagy túl gyorsan (tachikardia), vagy szabálytalanul veri a testbe a vért. Pacemaker beültetésével ezek a tünetek eltűnhetnek, a betegek teljes, aktív életet élhetnek.
+> 
+> *In 2013, multiple firms announced devices that could be inserted via a leg catheter rather than invasive surgery. The devices are roughly the size and shape of a pill, much smaller than the size of a traditional pacemaker. Once implanted, the device's prongs contact the muscle and stabilize heartbeats.* ~ https://en.wikipedia.org/wiki/Artificial_cardiac_pacemaker#Intra-cardial
 > 
 > **mit csinál?** elektródák detektálják a szív elektromos aktivitását és adatokat gyűjtenek, hogy ha kimarad egy ütem akkor helyettesítsék
 > 
@@ -119,7 +139,7 @@ egységei:
 - izomból intramuszkuláris
 
 ## EOG (elctrooculography)
-> szem köré elhelyezett elektrodákkal figyelem, hogy merre éz a páciens
+> szem köré elhelyezett elektrodákkal figyelem, hogy merre néz a páciens
 
 ## ECoG/ECG (elektrocorticography
 - invazív mérés
@@ -128,7 +148,7 @@ egységei:
 - jobb a felbontás
 
 ## EEG (elektroencephalography)
-- elektrofiziológiai mérőeszköz, mely az idegsejtek elektromos aktivitását tudja mérni
+- elektrofiziológiai mérőeszköz, mely az idegsejtek elektromos aktivitását tudja mérni valós időben. Az EEG-vel elvezethető jel az elektroenkefalogram, amely egy komplex, több komponensű periodikus görbeként írható le.
 - g.tec
 - emotiv epoc
 - mindrove
@@ -141,7 +161,8 @@ jelek:
 - gamma
 
 > ### ERP (event related potential
-> eseményfüggő alkalmazás
+> - eseményfüggő alkalmazás
+> - valamely inger hatására kiváltott egyszeri potenciálváltozása EEG jelen 
 
 alkalmazás:
 - autonomus projekt
@@ -150,6 +171,8 @@ alkalmazás:
 - braintalk (P300-as használatával)
 
 ## Alvás
+- Fokozódik a sejtosztódás
+- Sejtelhalás üteme csökken
 - gyerekeknél 9 óra
 - felnőtteknél: 7-9 óra
 
@@ -157,8 +180,14 @@ alvás szakaszai:
 - 0 - alfa - ébrenlét
 - 1 - théta - ébrenlét nyugodt
 - 2 - alvási orsók - könnyű alvás
-- 3 - 
+- 3 - lassú, deltahullámok
 - 4 - rem szakasz: álmodik - mély alvás
+
+frekvenciák alapján: 
+- Ébrenlét, aktív: 20 Hz (15 - 40 Hz) 
+- Ébrenlét, nyugodt: 10 Hz (9 - 14 Hz) 
+– Könnyű alvás: 3,5 - 7 Hz 
+- Mély alvás: 3,5 Hz alatt
 
 **REM és nem-REM szakaszok:**
 - elalvás után 70 percel
@@ -168,7 +197,9 @@ alvás szakaszai:
 - gyors anyagcsere
 - paradox alvás
 
-fázisok sorrendje kötöttt
+**fázisok sorrendje kötöttt:**
+-  Non-RapidEye-Movement (NREM)
+-  Rapid-Eye-Movement (REM) 
 
 ## Apnoe
 - alvásfüggő légzészavar

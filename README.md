@@ -8,13 +8,58 @@
 - önálló féléves feladat
 
 
-## szenzorok csoportosísása mérendő mennyisé alapján
-- mechanikai érzékelők
-- termikus mennyiségek
-- elektromos és mágneses mennyiségek
-- élettani paraméterek
+## okos vs intelligens
+- az intelligens képes tanulni, vagy legalábbis valamilyen ú tulajdonságokat szerezni
+- az okos "csak" vezérlés, automatizálás, digitalizálás
 
-biológia jellemzők mérésére:
+## szenzor fogalma
+> - Érzékelő ami valamilyen fizikai/kémiai mennyiséget, vagy annak változását mér
+> - digitális mérés
+> - digitális adatot tovább tudja küldeni vezetékes, vagy vezeték nélküli csatornán
+> 
+> **hátrány:** táplálás, adattovábítás módja, rendszer sebezhetősége, felhasználó életének megnehezítése, stb
+> 
+> ### szenzorok csoportosísása mérendő mennyiség alapján
+> **szenzor:** Érzékelő ami valamilyen fizikai/kémiai mennyiséget, vagy annak változását méri. Digitális adatot ad ki magából. A digitális adatot tovább tudja küldeni vezetékes, vagy vezeték nélküli csatornán.   
+> - mechanikai érzékelők
+> - termikus mennyiségek
+> - elektromos és mágneses mennyiségek
+> - élettani paraméterek
+
+![dikw pyramid](https://www.ontotext.com/wp-content/uploads/2018/03/DIKW-Pyramid.png)
+
+## DAQ
+> Kommunikációs infrastruktúra köti össze a kliens és központi rendszert:
+> - Központi adat tároló és adat menedzselő rendszerek 
+> - Üzemeltető és kiszolgáló személyzet infrastruktúrája 
+> - rendszer irányító renddszerek
+
+## DCS
+> olyan rendszer ami központi vezérléssel távolról szabályozó körök működését és paramétereit lehet változtatni
+> - kritikus infrastruktúráknál használt
+> - helyi vezértlőt alkalmaz
+> - a koomunikáció is lokális, amit esetleg távolról lehet monitorozni
+
+## SCADA
+> Legyen egy olyan rendszer ahol én távolról tudok beavatkozni, szabályozni, és monitorozni egyszerre, központosított vezérléssel távoli adatgyűjtéssel, erőművek, csővezetékeknél jó.
+> 
+> bonyolult rendszerekt képes felügyelni, a 
+> 
+> ![SCADA system](https://www.ssla.co.uk/wp-content/uploads/2018/10/scada.png)
+> 
+> **SCADA generációk:**
+> 1. monolitikus, szigetszerű: egymástól függetlenek, zártak, külső kapcsolat nélkül, ideálsi erőművekhez
+> 2. elosztott rendszerek, földrajzilag nagyobb kiterjedésű, LAN hálózatok, egymással is kommunikálnak
+> 3. LAN nál nagyobb kiterjedéssel ugyanaz
+> 4. IoT nagyon sok szenzorral
+> 5. felhővel összekapcsolt rendszer
+> 
+> *felhasználható pl* 
+> - távoli telemetria, beteg megfigyelés
+> - veszélyesen/nehezen kezelhető helyek karbantártása
+> - biztonsági rendszerek
+
+**biológia jellemzők mérésére:**
 - ekg  → ElectroCardioGraphy 
 - eeg  → ElektroEncephaloGraphy 
 - emg  → ElectroMyoGraphy 
@@ -249,8 +294,8 @@ Toyota: a szem nyitottságát nézi
 - biotex
 
 ## prezcíziós mezőgazdaság/állatenyésztés
-multispektrrális képek a mezőgazdaásgról megadja a kukorica stressz szintjét, szárasság stb szintjét
-- [RTK](https://en.wikipedia.org/wiki/Real-time_kinematic) használata
+multispektrális képek a mezőgazdaásgról megadja a kukorica stressz szintjét, szárasság stb szintjét
+- [RTK](https://en.wikipedia.org/wiki/Real-time_kinematic) használata (https://www.youtube.com/watch?v=pOuYdxBWVyU)
 - adatgyűjtés
 - összefüggések és előrejelzések
 - információ és tartalomszolgáltatás
@@ -268,8 +313,8 @@ multispektrrális képek a mezőgazdaásgról megadja a kukorica stressz szintj�
 > 
 > - hatótávolság
 > - energiafelhasználás
-> - sok modlaitás
-> - mintavételezési idők problámja ->sok adat
+> - sok modalitás
+> - mintavételezési idők problámja -> sok adat
 > - adat aggregáció
 > - védelem munkagépektől/emberektől, állatoktól/környezeti hatásoktól
 > - vizualizációs problémák
@@ -317,18 +362,26 @@ multispektrrális képek a mezőgazdaásgról megadja a kukorica stressz szintj�
 
 a párhuzamos adatküldés nagyban megnövelte a sebességet
 
+> **IEE 802.11**
+> - Határok nélküli médiumot használ 
+> - A külső jelek ellen védtelen 
+> - A közeg jóval kevésbé megbízható mint a vezetett hullámú összeköttetés esetében 
+> -  Dinamikus topológia 
+
 ![wifisec](https://pbs.twimg.com/media/DF6XjSeXkAAvbUo.jpg)
 
 - csma/ca - az állomás jelentkezik, amire választ kap ahhoz hogy adhasson
 - csma/cd - az eszköz érzékeli az ütközést és vár 
 
-wifi jelenlegi titkosítása 2018 óta WPA3
+*wifi jelenlegi titkosítása 2018 óta WPA3, Simultaneous Authentication of Equals (SAE) kulcscsere protokol a berendezések között* 
+
 
 #### bluetooth
 ![bluetoth history](https://miro.medium.com/max/4000/1*_GjhWQieYTUl_2mbTehkJQ.png)
 
 *könnyen hackelhető*
 
+**verziók:** 
 - 3.0 -ban a pan hálózatot kinyitotátk egy hálózati hozzáférésre mert beleillesztették a wifi protokolt
 - 4.0 -ban low energy protokollt adtak bele
 - 4.2 - ben IoT támogatást és IPv6 támogatást és titkosítást kapott
@@ -336,7 +389,7 @@ wifi jelenlegi titkosítása 2018 óta WPA3
 - most az 5.3-nál járunk, 243 méteres távolságra szól
   - 1 master 7 eszközt szolgál ki, és több százat alvó állapotban
 
-**basic rate**
+**basic rate és LE**
 - BR: frekvenciamodulálásst használ, 1 tick 302.5 us
 - LowEnergy: 1Mb/s
 
@@ -344,18 +397,62 @@ wifi jelenlegi titkosítása 2018 óta WPA3
 
 ![howitworks](https://www.researchgate.net/profile/Ee-May-Fong/publication/259246800/figure/fig5/AS:297112509140993@1447848550198/Bluetooth-communication-between-the-transmitter-and-mobile-devices.png)
 
-#### ant/ant+
+#### wibree
+- Low-power wireless local area network 
+- Hatótávolság 5 - 10 méter 
+- Frekvencia: 2.4-GHz (RF) band. 
 
+#### ant/ant+
 - fitness eszközökhöz használt.
+- https://www.thisisant.com/
+- Egy 2032 gombelem: 25uA/év 
+- skálázható
+- **ANT** egy kommunikációs protokoll 
+- **ANT+* egy menedzselt hálózat eszközök között
+  -  Üzenet ráta 0.5Hz -> 200Hz (8byte adat)
+  -  Max: 65.000 szimultán kapcsola 
+  -  1.9V CR2032 elemmel tipikusan 5 év üzemid
+- cél piacok: 
+  -  Suunto 
+  - Garmin 
+  - Timex 
+  - wahoo 
+  - Sony Ericsson(Android) 
+  - HTC 
+  - Samsung 
+
 ![ant](https://www.researchgate.net/profile/Nadeem-Mehmood/publication/285510534/figure/fig1/AS:367752901611520@1464690532770/hArmor-System-Modular-Architecture_Q320.jpg)![ant+](https://lh3.googleusercontent.com/proxy/ZoCFi0-uQOMWuHYv3GADWOMEjuUR6smHNo7HJErJR8O0VyOyBACHgx4S3X7aAz_ucoJFRNtxqIEXsn-Kk0MnpwlX22zflmhCkzmtQs90Bu3xfChtIQnC_AYzHwnA)
 
 #### zigbee
-okosházakban használt technológia
+>  http://www.zigbee.org/
+> - okosházakban használt technológia
+> - Mindenhol használható frekvenciák 2.4 GHz
+> - WPAN –Wireless Personal Area Networ 
+> - falon/vizen nehezen megy át
 - 100m - ig
 - 250kbps
 - ism sávon: nem kell hozzá külön frekvenciengedély hogy használjuk.
 
-## HF: megnézni és leküldeni, hogy a telefon milyen vezetkénélküli kapcsolatokra képes
+> **ZigBee hálózat:** két féle csomópont van:
+> - Központi egység
+>   - Folyamatos tápellátás, elegendő számítási kapacitás
+>   - Hálózat beacon üzeneteinek küldése, a hálózat felállítása, az egyszerű csomópontok szervezése, a csomópontok paramétereinek tárolása, a párosított csomópontok üzeneteinek továbbítása
+> - Egyszerű csomópont
+>   -  csak a központi egységgel tudnak közvetlenül kommunikálni
+>   -  Véges tápellátás 
+>   -  Folyamatosan keresik az elérhető hálózatokat 
+>   -  Adatküldés csak ha szükséges  
+>
+> Útvonalkeresés *broadcast* üzenettel. MAC szintű titkosítás.
+
+##### Zigbee 3.0
+> Megbízható, robosztus, kis energia fogyasztás,skálázható,biztonságos, globális (2.4GHz) , 130+ eszköz definíció /2016/
+> 
+> **Biztonsági rések**
+> - Azonosítás kezdeményezés, 
+> - factory reset
+> - kommunikációs csatorna állítás
+> - 100 m-ről lámpa kapcsolgatás
 
 #### 802.11.ah
 - 1 km
@@ -367,9 +464,12 @@ okosházakban használt technológia
 
 #### long range uhf
 - még minidg ism
+- Kb.: 10 km hatótávolság
 - extrém esetben yagi antennákkal akár 160 km-is elérhető.
 - frekvenciasáv: 433 MHz
 - nagy hatótávolságú dronvezérléshez alklamas lehet
+- Frekvencia ugrás, áthatol fákon és tárgyakon 
+- Előszeretettel használják RC berendezésekben 
 
 #### dash7 
 - félkatonai felhasználása van
@@ -380,7 +480,7 @@ okosházakban használt technológia
 
 #### UWB
 - vezeték nélküli továbbítás
-- szabványosítás és negedélyeztetés alatt áll
+- szabványosítás és engedélyeztetés alatt áll
 - 400-600Mbit/s és feljebb
 - alacsony fogyasztású
 - rövid ideig ad, viszont nagy órajelen
@@ -505,3 +605,77 @@ soros kommunikációs:
   - a master adja az órajelet
   - master és slave szerep felcserélhető
   - felhúzó elllenállással
+
+
+## Fogalmak
+> - szenzor -  Érzékelő ami valamilyen fizikai/kémiai mennyiséget, vagy annak változását méri. 
+> - IoT - internet of things, okosház, okosautó, precíziós gazdálkodás, stb
+> - telemedicina - távmonitorozás vagy távdiagnosztizálása a betegnek
+> - ICT - information and communication tech
+> - távmonitorozás - pl koloszterin mérő, pacemaker, ekg, eeg, stb vagy talajnedvesség, időjárás, stb
+> - WAN - Wide Area Network (10-100km) országos
+> - MAN - Metropolitan Area Network (5-10km) városi
+> - PAN - Personal Area Network (2-5m) bluetooth, automata beléptetés, stb
+> - WPAN - 802.15 – Wireless Personal Area
+> - szisztolé - a vérnyomás magasabb érétéke, túl magas értéke magyavérnyomásra utal, a szívizom öszehúzódásból ered
+> - diasztolé - a vérnyomás alacsonyabb érétéke, magas értéke az erek rugalmatlanságát jelzik
+> - variabilitás -  a szív miként képes a belső és külső környezet megváltozott terheléseire a szívveréstől szívverésig eltelt időtartamot folyamatosan megváltoztatni 
+> - fehér
+> - hipertónia - magas vérnyomás
+> - auszkultáció -  Korotkov hangok detektálásán alapul; **Hátrány:** egyetlen pillanatnyi érték, mandzsetta befolyásol, leeresztési sebesség befolyásol, szubjektív a hallhatóság 
+> - Korotkov -  Az először hallható erős koppanó hang (Korotkov 1-es hang) a szisztolés vérnyomás megjelenését mutatja, a hang teljes megszűnése (Korotkov 5-ös hang) a diasztolés vérnyomást jelzi
+> - mandzsetta - vérnyomásmérő 
+> - Oszcillometriás módszer - Automata vérnyomásmérők; Az artéria pulzálása megjelenik a felkarra helyezett mandzsetta nyomásában; A pulzálás maximális:artériás középnyomással (MAP) ebből származtatott A szisztolés és diasztolés érték; Hátrány: a szorzók pontatlanok, öregedés→artériák rugalmatlanok 
+> - artériás -  főütőeren átmenő
+> - Tonometria - Legpontosabb nem invazív mérési módszer – Mechanikai tapintófejjel rögzítésre kerül a csuklóartéria pulzálása (folytonos nyomásgörbe) – Hátrány: költséges megoldás
+> - PPG-alapú -  A fotopletizmográf (PPG) a hajszálerek térfogat változását regisztrálja (pl:a bal kéz egyik ujjbegyén), plusz mandzsettával mérik + EKG görbe – Hátrány: bonyolult, sok nehezen követhető változó
+> - glükóz - szőlőcukor 
+> - Inzulin - Az inzulin serkenti a máj glikogénraktározását és a sejtek glükózfelvételét, ily módon csökkenti a vércukorszintet
+> - Inzulinreceptor - ezen keresztül jut inzulin a testbe
+> - Inzulinrezisztencia - a sejtek idővel ellenállnak az inzulin sejthártya nyitogató kísérleteinek
+> - Diabetes 1 - Inzulin adás szükséges (rendszeres) – A hasnyálmirigy inzulint termelő béta-sejtjeinek pusztulása következtében nincs elegendő inzulintermelés 
+> - Diabetes 2 - Lépcsőzetes kezelés – Életmódváltoztatás→ testsúlycsökkentés – tablettás antidiabetikus gyógyszerek 
+> - Tesztcsík - Tesztcsík (többnyire külön az egyes mérési paraméterekre) – színelváltozások egyértelmű és minél pontosabb leolvasása
+> - Lándzsa (vért veszünk szúrással)
+> - Fonendoszkóp - sztetoszkóp, nyakbakasztós doktorbácsis hallgatózó
+> - Elektrokardiográf - [EKG](https://github.com/gabboraron/szenzormodularitasok#ekg)
+> - Einthoven-háromszöget - az ekg mérés alapja, nevét feltalálólájórl kapta
+> - depolarizáció - elektromos kisülés a szívben
+> - repolarizáció - elektromos újratöltődés a szívben
+> - Kilégzési csúcsáramlás mérő  - Lényegében azt méri, hogy egy kilégzés alkalmával milyen gyorsan jut ki a levegő a tüdőből. A leolvasott érték az ún. kilégzési csúcsáramlás értéke (peak expiratory flow, PEF), egysége l/perc
+> - Vérgázanalízis - artériás vér pH, CO2, stb értékei
+> - Oxigénszaturáció - a hemoglobin oxigénnel való telítettségének mértéke százalékban. Pulzoximéterrel mérhető
+> - SAO2 - oxygen saturation as measured by blood analysis
+> - Spirométer - A tüdő levegőbefogadó képességének mérésére való eszköz 
+> - Testzsírmérés - hány kg
+> - AUV - autonomous underwater vehicle
+> - ROV - Remotely operated underwater vehicle
+> - Koleszterin - LD/HDL
+> - LDL - low density lipoprotein
+> - HDL - high density lipoprotein
+> - VLDL - very-low-density lipoprotein.
+> - laktát - a tejsav ionos (elektromosan töltött) formája, magas energitartalommmal
+> - hemoglobin - vörösvértest
+> - triglicerid -  a táplálkozás során felvett zsírok legfőbb alkotóelemei, illetve a szervezet zsírraktárai is főként ezekből épülnek fel
+> - Antropometria - az emberi test leírható és mérhető jellegeinek rendszerezésével és egybevetésével foglalkozik
+> - NRZ - USB-n használt non-return-to-zero kódolás
+> - AES -  MAC szintű titkosítás, zigbeenél
+> - ULP -  ultra alacsony fogyasztás → évekig működik 
+> - UWB - alacsony fogyasztású Ultra szélessáv 
+> - PCB - antenna, vezető útvonalakkal van felépítve a nyákon/ban
+> - u.FL - egy kis konnektor, hasznos, ha ki szeretném vinni műszerházon kívülre az antennát
+> - RPSMA - nagyobb antenna csatlakozó
+> - vivőjel nélküli kommunikáció - 
+> - pervasive 
+> - mesh hálózat
+> - SKKE - Biztonságos: Symmetric-Key Key Exchange
+> - ISM - nem kell engedély hozzá
+> - ad-hoc - központi vezérlés nélküli,  Wi-Fi hálózatok, amelyek általában ideiglenes jelleggel jönnek létre.
+> - hullámhossz - az a távolság, amekkora távolságonként a hullám ismétlődik
+> - pH - savasság, bázikusság mértékegység
+
+
+
+
+
+

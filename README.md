@@ -631,7 +631,7 @@ soros kommunikációs:
 > - PPG-alapú -  A fotopletizmográf (PPG) a hajszálerek térfogat változását regisztrálja (pl:a bal kéz egyik ujjbegyén), plusz mandzsettával mérik + EKG görbe – Hátrány: bonyolult, sok nehezen követhető változó
 > - glükóz - szőlőcukor 
 > - Inzulin - Az inzulin serkenti a máj glikogénraktározását és a sejtek glükózfelvételét, ily módon csökkenti a vércukorszintet
-> - Inzulinreceptor - ezen keresztül jut inzulin a testbe
+> - Inzulinreceptor - érzékeli a az inzulint aminek hatására glükóz áramlik be a sejtekbe
 > - Inzulinrezisztencia - a sejtek idővel ellenállnak az inzulin sejthártya nyitogató kísérleteinek
 > - Diabetes 1 - Inzulin adás szükséges (rendszeres) – A hasnyálmirigy inzulint termelő béta-sejtjeinek pusztulása következtében nincs elegendő inzulintermelés 
 > - Diabetes 2 - Lépcsőzetes kezelés – Életmódváltoztatás→ testsúlycsökkentés – tablettás antidiabetikus gyógyszerek 

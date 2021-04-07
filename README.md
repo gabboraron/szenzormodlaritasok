@@ -674,8 +674,35 @@ soros kommunikációs:
 > - hullámhossz - az a távolság, amekkora távolságonként a hullám ismétlődik
 > - pH - savasság, bázikusság mértékegység
 
+## Arduino
+- nyílt hardver
+- c++, processing, java
+- az alap alaaplapra shieldeket lehet tenni
+  - TFT
+  - audio
+  - gsm
+  - wifi
+  - stb
+- atmel mikrovezérlővel működik alapvetően, de azért más is előfordul: https://www.arduino.cc/
+- egy lebutított programozói feületet ad amivel sok mindent lehet csinálni, és mivel egy hardverhez már könnyen lehet kész API így az könnyen használható, szemben a Texas STM32-es rendszerekkel
+- legelterjedtebb az arduino uno, és arduino nano
+- [*pin out*](https://www.google.com/search?sxsrf=ALeKk01WQs3_ikVUubfXsZXTRREZhV9e3g:1617797162800&source=univ&tbm=isch&q=arduino+pinout&sa=X&ved=2ahUKEwia59OJjOzvAhVQ6aQKHSTMAoAQjJkEegQIBhAB&biw=927&bih=970#imgrc=ZwVoFnEq8OqP0M) diagrammon van, hogy melyik lábra mi köthető. ![arduio pin out](https://images.prismic.io/circuito/8e3a980f0f964cc539b4cbbba2654bb660db6f52_arduino-uno-pinout-diagram.png?auto=compress,format) 
+- `Tools\Board\` menüben ki kell választani melyik alaplapra fordítsa a bináris kódot
 
+**A program részei:**
+- globális változók megadása
+- `setup(){}` függvény egyszer fut le
+- `loop(){}` végtelenszer fut, ez maga a főprogram
 
+**Analóg és digitális jelek:**
+- 14 digitális ki/bemenet
+  - `digitalWrite(láb, érték)` ahol `érték` az `0` vagy `1`
+  - `digitalRead(láb)`
+- 6 analóg láb bemenet, 0-123-ig 10 bites szám arról, hogy az adott pinen milyen áramerősséget mért: `analogRead(láb)`
+  - analóg kimeneten `analogWrite(láb, érték)` formában 0-255 közötti számmal oldjuk meg.
 
+szimulátor: https://www.tinkercad.com
+költségtervező szimulátor: https://www.circuito.io/
 
+lednél hoszú láb a pozitív
 

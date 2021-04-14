@@ -708,6 +708,7 @@ lednél hoszú láb a pozitív
 
 # Adatáramlás - DAQ
 - végberendezés
+  - adatgyűjtő 
   Vagy nagy fokon integrált rendszerek vagy nagy méreteket öltene, a hűtés, stb okán
   - nyers adatokat használ
   - adat töredékek kinyerhetőek
@@ -728,4 +729,52 @@ lednél hoszú láb a pozitív
   - 5%-a elemzett
 
 A mintavételi frekvencia a maximális frekvenciától függ.
+
+adatszűrés:
+- zaj levétele
+- jelek elkülönítése egymástól
+- jel redundancia csökkentése
+- adatforrás alapján:
+  - szövegfájlból dolgozó
+  - adatbázisbló dolgozó
+  - bináris fájlból dolgozó
+- hibareakció szerint:
+  - hiba esetén leálló szűrő
+  - automatikus javítást megkísérlő szűrő
+  - hibás adatot eldobó/kihagyó
+- optimizmus szerint:
+  - pozitív szemléletű - adatok túlnyomórészt jók
+  - negatív szemléletű - alapvetően azt mondják, hogy már hibás az érték, redundancia kell a rendszerbe, hogy csökkentsük a hibás méréseket
+- jel karakterisztika szerint:
+  - felületáteresztő: vágási pont *alatti*  értékektet kiszűri
+  - aluláteresztő:  vágási pont *feletti* értékektet kiszűri
+  - sáváteresztő: egy tartományon belüli értékeket neged át
+  - lyukszűrő: egy sávban levő értétkeket *nem* enged át
+
+> ## Adaptív szűrés folyamata:
+> 
+> - beérkező adatok összetettek
+> - adaptáció = alkalmazkodás
+> - szűrési paraméterek/tulajdonságok báltoztatásával a keletkező szűrtadat lényeges/fontos információkat nagyobb arányban tartlamazza
+> 
+> ## Előfeldolgozás:
+> - simitás: ablakozunk, valamilyne ablak mérettel átlagokat hozunk, az adat mennyisége áltozatlan
+> - aggregálás: sok adatból egy adatokt csinálunk, valhogy átlagolunk pl
+> - küszöbözés: a lentésre fókuszálunk, nem az értékre, szinteket határozunk meg, amiket ha átlép az érték figyelembe vesszük
+> - idősor analízis: a m.érés idejét és a mérést öszevetve használhatunk statisztikai eljárásokat, teát ha egy folytonos sorból kiveszünk valamilyen minta szerint adatokat akkor abból lehet valamilyen idő függvéányében jelezhető értéket megmondani
+> 
+> **független és összefüggő adatok:**
+> - beteg közérzete mellé időjárás/hold ciklus/stb hozzárendelése
+> 
+> **döntéselmélet:**
+> - adatok feldolgozása után döntési kényszerbe kerülhetünk, *pl: a páciens nem mozog x órája*
+> - döntési szituációban , döntést ajánljon amely a legnagoybb várható hasznoságot biztosítja.
+> - riaasztási események generálása egy döntési esemény alapján
+> *pl: MTBF a hard diskeknél, mikor a hard disk részeinek elromálása közti időt adjuk meg*
+> - **Dscriptive anlytics**: mi történt, és mia a vlasége, hogy újra leőfordul? *pl eltört a lábam, és mivel megoldható*
+> - **diagnostic analytics**: miért történt az adott esemény? Mivel kiküszöbölhető? *pl: azért tört el a lábom, mert a csontritkulásom xy állapotban*
+> - **predictive analytics**: mi fog történni? Mennyi ideje van a berendezésnelk az első elromlástól vagy az első elromlásig? *pl: egy központi adatgyűjtő szólna, napokkal előre, hogy lecsökkent a kalcium szint és igyunk pl tejet, hogy rndbejöjjünk.*
+
+
+
 

@@ -706,3 +706,26 @@ költségtervező szimulátor: https://www.circuito.io/
 
 lednél hoszú láb a pozitív
 
+# Adatáramlás - DAQ
+- végberendezés
+  Vagy nagy fokon integrált rendszerek vagy nagy méreteket öltene, a hűtés, stb okán
+  - nyers adatokat használ
+  - adat töredékek kinyerhetőek
+- köztes réted
+  - Itt tároljuk a feldolgozott adatokat.
+
+
+> Az állapotváltozásokból trenek alakíthatóak ki.
+ 
+**Problémák:**
+- sok adat, sok a redundáns adat is
+- hibás és téves adatok
+- nyílvánvaló adatok feldolgozása egyszerű, és a több szenzorjel közötti korreláció az érdekes
+- az adat kereshető és nem túl redundáns tárolási módja
+  statisztikák szerint: 
+  - az adatok 78%-a felesleges
+  - 22%-a dokumentált
+  - 5%-a elemzett
+
+A mintavételi frekvencia a maximális frekvenciától függ.
+

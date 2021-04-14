@@ -774,6 +774,8 @@ adatszűrés:
 > - **Dscriptive anlytics**: mi történt, és mia a vlasége, hogy újra leőfordul? *pl eltört a lábam, és mivel megoldható*
 > - **diagnostic analytics**: miért történt az adott esemény? Mivel kiküszöbölhető? *pl: azért tört el a lábom, mert a csontritkulásom xy állapotban*
 > - **predictive analytics**: mi fog történni? Mennyi ideje van a berendezésnelk az első elromlástól vagy az első elromlásig? *pl: egy központi adatgyűjtő szólna, napokkal előre, hogy lecsökkent a kalcium szint és igyunk pl tejet, hogy rndbejöjjünk.*
+> 
+> ![pragmatica](https://pragmaticarchitect.files.wordpress.com/2016/01/conversionrate_example_01.png)
 
 
 

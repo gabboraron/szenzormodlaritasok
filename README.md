@@ -777,6 +777,62 @@ adatszűrés:
 > 
 > ![pragmatica](https://pragmaticarchitect.files.wordpress.com/2016/01/conversionrate_example_01.png)
 
+# IoT rendszerek infrastruktúrája
+- building management
+- energy
+- enviroment
+- famring/precision aggrivulture
+
+https://www.youtube.com/watch?v=_AlcRoqS65E
+
+![iot stack](https://i.pinimg.com/originals/f8/bf/00/f8bf004cf42577b7fcdfe0c3de0daf87.png)
+
+![iot edge functions](https://pbs.twimg.com/media/DguBB-FX0AAyY0H.jpg)
+
+Táv medicína: https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare?rtc=1 https://yourlifeyourdata.com/ https://doktor24.hu/
+
+Fájl típusúk összehasonlítása: ![fily types](https://ni.scene7.com/is/image/ni/Compare_Table_20090626160253?scl=1)
+
+Struktúrált bináris fájl: [TDMS](https://www.wiresmithtech.com/articles/what-is-a-tdms-file/)
+
+IoT menegment tool: https://thingsboard.io/
+
+szenzor menedszment: https://temboo.com
+
+free szerver agent: https://www.oetiker.ch/en/oss/projects/
+
+## Hol tároljuk az adatot?
+Végberendezésnél: 
+- gyorsan hozzáférhető
+- nyers adat
+- adattöredékek
+- sokszr lokális
+
+központi:
+- hozzáférhető
+- teljes adatstrukktúra
+- feldolgozott adat
+
+adatküldési problémák:
+- sebesség
+- adat méret
+
+Adattárolás:
+- adat tömörítés
+  - veszteséges 
+  - veszteségmentes
+  - bináris
+- redukció
+  - redundancia meghatározása
+  - redundancia csökkentése
+    - időbéylegek törlése
+  - mennyiség csökkentése
+    - x idő után elévülés
+  - többszintű adattárolás:
+    - lassabb - nagyobb
+    - gyorsabb - kisebb
+  - adatok titkosságának garantálása  
 
 
 
+ 

@@ -789,7 +789,12 @@ https://www.youtube.com/watch?v=_AlcRoqS65E
 
 ![iot edge functions](https://pbs.twimg.com/media/DguBB-FX0AAyY0H.jpg)
 
-Táv medicína: https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare?rtc=1 https://yourlifeyourdata.com/ https://doktor24.hu/
+**Táv medicína:**
+- [Microsoft HealthVault](https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare?rtc=1) betegek, orvosok közötti interakció, fejlődő országokban több helyen bevezetve, az otthoni egészségügyi eszközök gyártóit is bevonták, így egyból akár az eszközről feljuthat az információ a rendszerbe
+- https://yourlifeyourdata.com/ 
+- https://doktor24.hu/
+- Adatgyűjtésre Google Health indult, ahol a beteg beadta milyen adatai vannak és azzal BigData elemzéseket lehet végrehajtani, meg lehet osztani a flehasználók (orvos-beteg) között.
+- Lydia
 
 Fájl típusúk összehasonlítása: ![fily types](https://ni.scene7.com/is/image/ni/Compare_Table_20090626160253?scl=1)
 
@@ -799,7 +804,8 @@ IoT menegment tool: https://thingsboard.io/
 
 szenzor menedszment: https://temboo.com
 
-free szerver agent: https://www.oetiker.ch/en/oss/projects/
+- free szerver agent: https://www.oetiker.ch/en/oss/projects/ ; http://oss.oetiker.ch/mrtg/download.en.html ; 
+- más megoldások: Temboo, Xively, 
 
 ## Hol tároljuk az adatot?
 Végberendezésnél: 
@@ -832,7 +838,6 @@ Adattárolás:
     - lassabb - nagyobb
     - gyorsabb - kisebb
   - adatok titkosságának garantálása  
-
 
 # fogalmak2
 1.	CRC - checksum https://en.wikipedia.org/wiki/Cyclic_redundancy_check 

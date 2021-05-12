@@ -834,5 +834,52 @@ Adattárolás:
   - adatok titkosságának garantálása  
 
 
+# fogalmak2
+1.	CRC - checksum https://en.wikipedia.org/wiki/Cyclic_redundancy_check 
+2.	CSMA/CD - az eszköz érzékeli az ütközést és vár; adás közben esetlegesen bekövetkező ütközést érzékeli és abbahagyja az adást. Régi ethernet protokoll.
+3.	CSMA/CA - az állomás jelentkezik, amire választ kap ahhoz hogy adhasson; a vivőt érzékelve a saját forgalomtovábbításának megkezdését véletlenszerű idővel eltolja. Ez akkor lehet hasznos, ha feltételezhetjük, hogy a közeg kiürülésére több csomópont is várakozik. Ma is használta WIFI LAN-on
+4.	M2M - A Machine-to-Machine ([M2M](https://www.youtube.com/watch?v=pPIC7gJIW8I&list=PLmpB0PK0w9EBDDJyyROgrSgy1XyitJfJd&index=2)) technológia olyan adatáramlást jelent, mely emberi közreműködés nélkül, gépek között zajlik. A kommunikáció minden olyan gép között létrejöhet, amely a megfelelő technológiával van ellátva ahhoz, hogy bekapcsolható legyen a rendszerbe. Mivel hatalmas adatmennyiséget kell a folyamat során értelmezni és tárolni, az M2M olyan fejlődő technológiákra támaszkodik, mint a felhőalapú számítástechnika vagy a Big Data elemzés. Alkalmazható: Gépek távfelügyelete, Aktuális állapot figyelése, Automatizálás és folyamat optimalizálás, Kritikus helyzetek észlelése. https://www.telekom.hu/uzleti/szolgaltatasok/egyeb-szolgaltatasok/m2m 
+5.	WEP - elavult wifi titkosítási módszer https://en.wikipedia.org/wiki/Wired_Equivalent_Privacy
+6.	WPA - 2004-ig használt wifi security protokol: https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access
+7.	WPA2 - 2004-2018 között érvényes wifi security protokol. https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access#WPA2
+8.	WiFi - mikrohullámú vezeték nélküli hálózati átvitel https://hu.wikipedia.org/wiki/Wi-Fi
+9.	MAC - a network interface controller saját egyedi azonosítója https://en.wikipedia.org/wiki/MAC_address
+10.	Access Point - hálózat hozzáférési pont, wifi vagy lan pl
+11.	vivő érzékelés - Figyeljük a vivő médiumot (carrier), hogy szabad-e, mielőtt adatot küldünk CSMA-CSMA/CD-CSMA/CA következik belőle https://people.inf.elte.hu/lukovszki/Courses/09NWI/nwI07s4.pdf
+12.	pozitív nyugta - Minden egyes elküldött csomaghoz tartozó ACK visszajelzése a teljes csomag átküldéséről, ilyen van a TCP protokollnál is https://hu.wikipedia.org/wiki/Transmission_Control_Protocol#Nyugt%C3%A1z%C3%A1s
+13.	DOS támadás - túlterheléses támadás amit nem ugyanaz mint amit Marika néni intéz a vakcináztatási időpontra jelentkezéskor https://en.wikipedia.org/wiki/Denial-of-service_attack
+14.	SSID - wifi hálózat azonosítója, "neve"
+15.	MAC cím szűrés - csak előre betáplált hálózati azonosítóval rendelkező gépeket fogad el a hálózatra való jelentkezéskor https://en.wikipedia.org/wiki/MAC_filtering
+16.	AES - az ezredfordulón elfogadott blokk eltolásos tikosíási módszer, brute force támadással még nem törték fel publikusan, de az "erőssége" függ a választott kulcs hosszától https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
+17.	BR/EDR - Bluetooth Basic Rate/Enhanced Data Rate - designed for low power operation and also leverages a robust Adaptive Frequency Hopping approach, transmitting data over 79 channels
+18.	BLE - bluetooth low energy, kis adatok átküldésére, kis energiafogyasztás mellett, de sok lehetőséggel https://github.com/gabboraron/szenzormodularitasok#bluetooth
+19.	FDMA - sávszél megosztás, tipikusan pl kábelTV szolgáltatásnál; [FDMA is the process of dividing one channel or bandwidth into multiple individual bands, each for use by a single user. Each individual band or channel is wide enough to accommodate the signal spectra of the transmissions to be propagated. The data to be transmitted is modulated on to each subcarrier, and all of them are linearly mixed together.](https://www.electronicdesign.com/technologies/communications/article/21802209/electronic-design-fundamentals-of-communications-access-technologies-fdma-tdma-cdma-ofdma-and-sdma)
+20.	TDMA - [egy csatornán több felhasználó ugynazzal a frekvenciával de saját üzentet küldhet ](https://en.wikipedia.org/wiki/Time-division_multiple_access#:~:text=Time%2Ddivision%20multiple%20access%20(TDMA,using%20its%20own%20time%20slot.)
+21.	Bluetooth energia osztály - a különböző bluetooth technogiák osztályozása, a magasabb értékűnek alacsonyabb a hatótávja. https://hu.wikipedia.org/wiki/Bluetooth
+22.	PAN - personal area ntework
+23.	HAN - home area network
+24.	LAN - local area network
+25.	NAN -  near-me network, or a network of devices informally connected by their proximity to one another. An example of this could be a business meeting in which various colleagues are sitting at the same conference table, sharing files to one another’s devices. 
+26.	MAN - metropolitan area network
+27.	WAN - wide area network - internet
+28.	RAN - regional area network. This is a large network like one made by an ISP
+29.	[Chirp](https://github.com/gabboraron/szenzormodularitasok#chirp) pulse - 
+30.	LTE - Long Term Evolution - It's a standard for 4G wireless transmission data, the fourth generation of mobile network technology 4G LTE networks are the next generation from the existing 3G networks 
+31.	5G - több antenna, más szögekben => nagyobb lefedettség; kevesebb használt rész => nagyobb sávszél https://ilearningx.huawei.com/portal/courses/course-v1:HuaweiX+EBGTC00000410+Self-paced/about
+32.	LPWAN - low-power wide-area network - llow long-range communications at a low bit rate among things (connected objects), such as sensors operated on a battery. https://en.wikipedia.org/wiki/LPWAN 
+33.	ED (End Device) - a mérőoszlop kinn a földön https://www.itwissen.info/Endgeraet-end-device-ED.html
+34.	BS (Base Station) -  a radio receiver/transmitter that serves as the hub of the local wireless network, and may also be the gateway between a wired network and the wireless network. It typically consists of a low-power transmitter and wireless router. - https://en.wikipedia.org/wiki/Base_station#:~:text=In%20the%20area%20of%20wireless,power%20transmitter%20and%20wireless%20router.
+35.	SIGFOX - [órai anyag](https://github.com/gabboraron/szenzormodularitasok#sigfox); Sigfox is rolling out the first global 0G network to listen to billions of objects broadcasting data, without the need to establish and maintain network connections. This unique approach in the world of wireless connectivity, where there is no signaling overhead, a compact and optimized protocol, and where object share not attached to the network. https://www.sigfox.com/en/what-sigfox/technology
+36.	LoRa - low-power wide-area network; based on spread spectrum modulation techniques derived from chirp spread spectrum (CSS) technology
+37.	LoRaWAN - LoRaWAN is a cloud-based medium access control (MAC) layer protocol but acts mainly as a network layer protocol for managing communication between LPWAN gateways and end-node devices as a routing protocol, maintained by the LoRa Alliance.
+38.	Okos város - dugó elárító mi vezéreltközlekedési rendszer, okos kukák, stb stb stb pl: Szongdo
+39.	M2M
+40.	H2M - huamn to machine
+41.	H2H - human to human
+42.	TDMS - [Struktúrált bináris fájl](https://www.wiresmithtech.com/articles/what-is-a-tdms-file/)
+43.	JSON - JavaScript Object Notation)
+44.	XML  - Extensible Markup Language
+
+
 
  

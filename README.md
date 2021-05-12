@@ -839,6 +839,21 @@ Adattárolás:
     - gyorsabb - kisebb
   - adatok titkosságának garantálása  
 
+## rendszer távfelügyleet lépései
+- SNMP
+  - Az SNMP a Simple Network Management Protocol, azaz az egyszerű hálózat menedzsment protokoll rövidítése. A TCP/IP család része, az IETF hozta létre. Hálózatra kötött eszközök vezérlését, adatainak lekérdezését szolgálja.
+  - *pl:*
+    - *Nagios: alkalmas aktív hálózati eszközök, illetve szerverek monitorozására.* 
+    - *HP OpenView: drága, már nem önlló termék.*
+    - *Jopr: Vállalati szoftver menedzsment megoldás JBoss rendszerekhez.*
+    - *RHQ: felxibilis plug-in rendszerű menedzsment szolgáltatás.*
+- MIB-ek
+  - Az SNMP protokollt kifejezetten bővíthetőre tervezték. Ezt a MIB-ek (management information base) segítségével érik el. 
+  - Egy MIB bizonyos eszközök által használt speciális tulajdonságokat ír le.
+  - Az egyes tulajdonságokat hierarchikus rendben elhelyezett objektumok reprezentálják. 
+  - Az objektumoknak a hierarchiában való elhelyezkedése biztosít egyedi azonosítót. 
+ 
+
 # fogalmak2
 1.	CRC - checksum https://en.wikipedia.org/wiki/Cyclic_redundancy_check 
 2.	CSMA/CD - az eszköz érzékeli az ütközést és vár; adás közben esetlegesen bekövetkező ütközést érzékeli és abbahagyja az adást. Régi ethernet protokoll.
